@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
 import Home from './src/Pages/Home';
@@ -8,41 +8,45 @@ import Sobre from './src/Pages/Sobre';
 import Login from './src/Pages/Login';
 import Contato from './src/Pages/Contato';
 
-const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} 
-        options={{ title: 'Página Inicial',
-          headerStyle: { backgroundColor: '#121212' },
-          headerTintColor: '#FFa500',
-          //headerShown: false, 
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={Home}
+          options={{ title: 'Alvenaria PlankMassa>Home',
+            headerStyle: { backgroundColor: '#ffffff' },
+            headerTintColor: '#5e1c00',
+            tabBarLabel: 'Home',
+            tabBarActiveTintColor: '#5e1c00',
           }}
         />
-        <Stack.Screen name="Sobre" component={Sobre}
-         options={{ title: 'Sobre',
-          headerStyle: { backgroundColor: '#121212' },
-          headerTintColor: '#FFa500',
-          //headerShown: false, 
+        <Tab.Screen name="Sobre" component={Sobre}
+          options={{ title: 'Alvenaria PlankMassa>Sobre',
+            headerStyle: { backgroundColor: '#ffffff' },
+            headerTintColor: '#5e1c00',
+            tabBarLabel: 'Sobre',
+            tabBarActiveTintColor: '#5e1c00',
           }}
         />
-        <Stack.Screen name="Login" component={Login}
-         options={{ title: 'Login',
-          headerStyle: { backgroundColor: '#121212' },
-          headerTintColor: '#FFa500',
-          //headerShown: false, 
+        <Tab.Screen name="Login" component={Login}
+          options={{ title: 'Alvenaria PlankMassa>Login',
+            headerStyle: { backgroundColor: '#ffffff' },
+            headerTintColor: '#5e1c00',
+            tabBarLabel: 'Login',
+            tabBarActiveTintColor: '#5e1c00',
           }}
         />
-        <Stack.Screen name="Contato" component={Contato}
-         options={{ title: 'Contato',
-          headerStyle: { backgroundColor: '#121212' },
-          headerTintColor: '#FFa500',
-          //headerShown: false, 
+        <Tab.Screen name="Contato" component={Contato}
+          options={{ title: 'Alvenaria PlankMassa>Contato',
+            headerStyle: { backgroundColor: '#ffffff' },
+            headerTintColor: '#5e1c00',
+            tabBarLabel: 'Contato',
+            tabBarActiveTintColor: '#5e1c00',
           }}
         />
-      </Stack.Navigator>
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
