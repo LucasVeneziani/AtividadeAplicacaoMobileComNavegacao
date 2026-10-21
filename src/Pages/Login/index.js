@@ -2,19 +2,27 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, TextInput, Pressable} from 'react-native';
 import { useState } from 'react';
 import styles from './style';
-// import Menu from '../Menu';
 
-
-export default function Login() {
+export default function Login({ navigation }) {
 
   const [user, setUser] = useState('');
   const [pass, setPass] = useState('');
 
   function validar() {
-    if(user == 'admin' && pass == '123') {
-      navigation.navigate('Login')
+    if (user.trim() == '') {
+      alert('Informe o usuário.');
+      return;
+    }
+
+    if (pass.trim() == '') {
+      alert('Informe a senha.');
+      return;
+    }
+
+    if (user == 'admin' && pass == '123') {
+      navigation.navigate('Home');
     } else {
-      alert('Usuario ou senha incorretos');
+      alert('Usuário ou senha inválidos.');
     }
   }
 
@@ -33,9 +41,6 @@ export default function Login() {
         </Pressable>
 
       <StatusBar style="auto" />
-
-      {/* <Menu /> */}
     </View>
   );
 }
-
