@@ -50,6 +50,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#a52900',
   },
+    botoesFormulario: {
+    flexDirection: 'row',
+    gap: 15,
+  },
   redes: {
     flexDirection: 'row',
     gap: 20,

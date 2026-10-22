@@ -30,21 +30,24 @@ export default function Contato() {
     Linking.openURL('https://wa.me/5511999999999');
   }
 
+  function limpar() {
+    setNome('');
+    setEmail('');
+    setMensagem('');
+  }
+
   function enviar() {
+
+
+  
     if (nome.trim() == '') {
       alert('Precisa Nome ');
       return;
     }
-
-
-
     if (email.trim() == '') {
       alert('Precisa E-mail ');
       return;
     }
-
-
-
 
     if (mensagem.trim() == '') {
       alert('Precisa Mensagem ');
@@ -55,6 +58,7 @@ export default function Contato() {
     setNome('');
     setEmail('');
     setMensagem('');
+
   }
 
   return (
@@ -143,10 +147,21 @@ export default function Contato() {
           </TextInput>
 
 
-          <Pressable onPress={enviar}   style={styles.botaoEnviar} >
+          <View style={styles.botoesFormulario}> 
 
-            <Text style={styles.textoBotaoEnviar}>Enviar</Text>
-          </Pressable>
+            <Pressable onPress={enviar} style={styles.botaoEnviar}>
+            
+              <Text style={styles.textoBotaoEnviar}>Enviar</Text>
+            </Pressable>
+
+
+            <Pressable onPress={limpar} style={styles.botaoEnviar}>
+
+              <Text style={styles.textoBotaoEnviar}>Limpar</Text>
+            </Pressable> 
+          
+          </View>
+
 
         </View>
 
