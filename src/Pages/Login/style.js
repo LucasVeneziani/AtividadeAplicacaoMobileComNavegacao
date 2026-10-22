@@ -6,22 +6,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    overflow: 'hidden',
-  },
-  fundo: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: 2250,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    opacity: 0.1,
-  },
-  tijolo: {
-    width: 30,
-    height: 30,
-    margin: 7.5,
-    resizeMode: 'contain',
   },
   caixa: {
     width: 320,
@@ -42,7 +26,6 @@ const styles = StyleSheet.create({
   logo: {
     width: 70,
     height: 70,
-    resizeMode: 'contain',
   },
   text: {
     fontSize: 22,

@@ -24,7 +24,7 @@ export default function Menu() {
       </View>
 
       <Pressable onPress={() => navigation.navigate('Login')} style={styles.botaoLogin}>
-        <Text style={styles.textoLogin}>Login</Text>
+        <Text style={styles.textoLogin}>Sair</Text>
       </Pressable>
 
       <StatusBar style="auto" />
