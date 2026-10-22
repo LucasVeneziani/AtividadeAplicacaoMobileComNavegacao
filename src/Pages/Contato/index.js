@@ -82,16 +82,21 @@ export default function Contato() {
             </Pressable>
           </View>
 
-          <View style={styles.redes}>
+            <View style={styles.redes}>
 
-            <Image source={require('../../../assets/instagram.jpg')} resizeMode="cover" style={styles.icone} />
+              <Pressable>   
+                <Image source={require('../../../assets/instagram.jpg')} resizeMode="cover" style={styles.icone} />
+              </Pressable>
 
 
-            <Image source={require('../../../assets/facebook.png')} resizeMode="cover" style={styles.icone} />
+              <Pressable>
+                <Image source={require('../../../assets/facebook.png')} resizeMode="cover" style={styles.icone} />
+              </Pressable>
 
 
-            <Image source={require('../../../assets/whatsapp.jpg')} resizeMode="cover" style={styles.icone} />
-
+              <Pressable>
+                <Image source={require('../../../assets/whatsapp.jpg')} resizeMode="cover" style={styles.icone} />
+              </Pressable>
 
 
           </View>
