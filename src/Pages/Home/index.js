@@ -10,7 +10,7 @@ export default function Home() {
  
       <ScrollView contentContainerStyle={styles.conteudo}>
     
-        <Text style={styles.titulo}>Principio</Text>
+        <Text style={styles.titulo}>Home</Text>
   
 
         <Text style={styles.boasVindas}>

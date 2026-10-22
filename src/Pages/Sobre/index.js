@@ -16,11 +16,11 @@ export default function Sobre() {
           <Image source={require('../../../assets/Tijolo.png')} resizeMode="contain" style={styles.logo} />
         </View>
 
-        <Text style={styles.nomeApp}>PlankMassa App</Text>
+        <Text style={styles.nomeApp}>Alvenaria PlankMassa</Text>
 
         <Text style={styles.descricao}>
 
-          Aplicativo da Alvenaria PlankMassa para consultar produtos, conhecer a empresa e entrar em contato de forma rápida e prática.
+         Nosso pequeno app empreendedor, para nossa Alvenaria PlankMassa 
         </Text>
 
         <View style={styles.caixaInfo}>
@@ -42,26 +42,44 @@ export default function Sobre() {
 
         </View>
 
+
         <View style={styles.caixa}>
+
+
           <Text style={styles.subtitulo}>Missão</Text>
+
           <Text style={styles.texto}>
             Fornecemos materiais a você, diretamente de fontes regionais. 
           </Text>
+
         </View>
 
         <View style={styles.caixa}>
           <Text style={styles.subtitulo}>Visão</Text>
+
           <Text style={styles.texto}>
+
             A confiança nunca nos deixa na mão. Confie em nós, e forneceremos a você o melhor. 
+
           </Text>
+
+
+
         </View>
 
+
         <View style={styles.caixa}>
+
           <Text style={styles.subtitulo}>Valores</Text>
+
           <Text style={styles.texto}>Qualidade em produtos</Text>
+
           <Text style={styles.texto}>Somos honestos</Text>
+
           <Text style={styles.texto}>Fornecemos qualidade</Text>
+
           <Text style={styles.texto}>Entregamos no prazo</Text>
+
         </View>
 
         <View style={styles.caixa}>
@@ -70,7 +88,7 @@ export default function Sobre() {
 
           <Text style={styles.subtitulo}>Informações Adicionais </Text>
 
-          <Text style={styles.texto}>Apenas em São Paul. </Text>
+          <Text style={styles.texto}>Apenas em São Paulo </Text>
 
           <Text style={styles.texto}>Aceitamos Pix </Text>
 
