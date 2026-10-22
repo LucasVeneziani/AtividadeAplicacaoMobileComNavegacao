@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, TextInput, Pressable, Linking, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TextInput, Pressable, Image } from 'react-native';
 import { useState } from 'react';
 import styles from './style';
 import Menu from '../Menu';
@@ -11,23 +11,11 @@ export default function Contato() {
   const [mensagem, setMensagem] = useState('');
 
   function ligar() {
-    Linking.openURL('tel:11999999999');
+    alert('Ligue para: (11) 99999-9999');
   }
 
   function enviarEmail() {
-    Linking.openURL('mailto:plankmassa@plank.com');
-  }
-
-  function abrirInstagram() {
-    Linking.openURL('https://www.instagram.com');
-  }
-
-  function abrirFacebook() {
-    Linking.openURL('https://www.facebook.com');
-  }
-
-  function abrirWhatsapp() {
-    Linking.openURL('https://wa.me/5511999999999');
+    alert('Envie um e-mail para: plankmassa@plank.com');
   }
 
   function limpar() {
@@ -87,28 +75,22 @@ export default function Contato() {
 
           <View style={styles.botoes}>  
             <Pressable onPress={ligar} style={styles.botao}>
-              <Text style={styles.textoBotao}>Ligar</Text>
+              <Text style={styles.textoBotao}> Ligar  </Text>
             </Pressable>
-            <Pressable onPress={enviarEmail} style={styles.botao}>
-              <Text style={styles.textoBotao}>Enviar E-mail</Text>
+            <Pressable onPress={enviarEmail} style={styles.botao}> 
+              <Text style={styles.textoBotao}> Enviar E-mail </Text>
             </Pressable>
           </View>
 
           <View style={styles.redes}>
 
-            <Pressable onPress={abrirInstagram}>   
-              <Image source={require('../../../assets/instagram.jpg')} resizeMode="cover" style={styles.icone} />
-            </Pressable>
+            <Image source={require('../../../assets/instagram.jpg')} resizeMode="cover" style={styles.icone} />
 
 
-            <Pressable onPress={abrirFacebook}>
-              <Image source={require('../../../assets/facebook.png')} resizeMode="cover" style={styles.icone} />
-            </Pressable>
+            <Image source={require('../../../assets/facebook.png')} resizeMode="cover" style={styles.icone} />
 
 
-            <Pressable onPress={abrirWhatsapp}>
-              <Image source={require('../../../assets/whatsapp.jpg')} resizeMode="cover" style={styles.icone} />
-            </Pressable>
+            <Image source={require('../../../assets/whatsapp.jpg')} resizeMode="cover" style={styles.icone} />
 
 
 
@@ -127,7 +109,7 @@ export default function Contato() {
 
           <Text style={styles.texto}>Segunda a Sexta: 8h às 18h</Text>
 
-          <Text style={styles.texto}>Sábado: 8h às 12h</Text>
+          <Text style={styles.texto}>Sábado: 8h às 12h  </Text>
 
           <Text style={styles.texto}>Domingo: Fechado</Text>
 
