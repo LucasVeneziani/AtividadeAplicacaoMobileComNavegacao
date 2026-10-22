@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -13,37 +12,29 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarPosition="top">
+      <Tab.Navigator>
         <Tab.Screen name="Home" component={Home}
           options={{ title: 'Alvenaria PlankMassa>Home',
-            headerStyle: { backgroundColor: '#a52900' },
-            headerTintColor: '#ffffff',
-            tabBarLabel: 'Home',
-            tabBarActiveTintColor: '#5e1c00',
+            headerShown: false,
+            tabBarStyle: { display: 'none' },
           }}
         />
         <Tab.Screen name="Sobre" component={Sobre}
           options={{ title: 'Alvenaria PlankMassa>Sobre',
-            headerStyle: { backgroundColor: '#a52900' },
-            headerTintColor: '#ffffff',
-            tabBarLabel: 'Sobre',
-            tabBarActiveTintColor: '#5e1c00',
+            headerShown: false,
+            tabBarStyle: { display: 'none' },
           }}
         />
         <Tab.Screen name="Contato" component={Contato}
           options={{ title: 'Alvenaria PlankMassa>Contato',
-            headerStyle: { backgroundColor: '#a52900' },
-            headerTintColor: '#ffffff',
-            tabBarLabel: 'Contato',
-            tabBarActiveTintColor: '#5e1c00',
+            headerShown: false,
+            tabBarStyle: { display: 'none' },
           }}
         />
         <Tab.Screen name="Login" component={Login}
           options={{ title: 'Alvenaria PlankMassa>Login',
-            headerStyle: { backgroundColor: '#a52900' },
-            headerTintColor: '#ffffff',
-            tabBarLabel: 'Login',
-            tabBarActiveTintColor: '#5e1c00',
+            headerShown: false,
+            tabBarStyle: { display: 'none' },
           }}
         />
       </Tab.Navigator>

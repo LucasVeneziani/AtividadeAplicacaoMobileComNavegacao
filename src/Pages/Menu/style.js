@@ -2,41 +2,38 @@ import { StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   containerMenu: {
-    flex: 1,
-    alignItems: 'end',
-    justifyContent: 'center',
+    width: '100%',
     flexDirection: 'row',
-    gap: 1,
-    bottom: 40,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#a52900',
+    paddingHorizontal: 20,
+    paddingVertical: 15,
   },
-  menuTextDark: {
+  esquerda: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 20,
+  },
+  titulo: {
     fontSize: 20,
     fontWeight: 'bold',
     color: '#ffffff',
   },
-
-  botaoSobre: {
-    backgroundColor: '#000000',
-    borderWidth: 3,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 5,
-   
+  link: {
+    fontSize: 16,
+    color: '#ffffff',
   },
   botaoLogin: {
-    backgroundColor: '#000000',
-    borderWidth: 3,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 5,
-   
+    backgroundColor: '#ffffff',
+    paddingHorizontal: 15,
+    paddingVertical: 6,
+    borderRadius: 10,
   },
-  botaoContato: {
-    backgroundColor: '#000000',
-    borderWidth: 3,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 5,
+  textoLogin: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#a52900',
   },
 });
 

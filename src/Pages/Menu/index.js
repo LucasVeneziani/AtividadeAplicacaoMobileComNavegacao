@@ -9,17 +9,25 @@ export default function Menu() {
   return (
     <View style={styles.containerMenu}>
 
-      <Pressable onPress={() => navigation.navigate('Sobre')} style={styles.botaoSobre}>
-        <Text style={styles.menuTextDark}>Sobre</Text>
-      </Pressable>
+      <View style={styles.esquerda}>
+        <Text style={styles.titulo}>Alvenaria PlankMassa</Text>
+
+        <Pressable onPress={() => navigation.navigate('Home')}>
+          <Text style={styles.link}>Home</Text>
+        </Pressable>
+        <Pressable onPress={() => navigation.navigate('Sobre')}>
+          <Text style={styles.link}>Sobre</Text>
+        </Pressable>
+        <Pressable onPress={() => navigation.navigate('Contato')}>
+          <Text style={styles.link}>Contato</Text>
+        </Pressable>
+      </View>
+
       <Pressable onPress={() => navigation.navigate('Login')} style={styles.botaoLogin}>
-        <Text style={styles.menuTextDark}>Login</Text>
+        <Text style={styles.textoLogin}>Login</Text>
       </Pressable>
-      <Pressable onPress={() => navigation.navigate('Contato')} style={styles.botaoContato}>
-        <Text style={styles.menuTextDark}>Contato</Text>
-      </Pressable>
+
       <StatusBar style="auto" />
     </View>
   );
 }
-

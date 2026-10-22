@@ -1,11 +1,12 @@
 import { StyleSheet} from 'react-native';
-import { useNavigation } from '@react-navigation/native'; 
-
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+  },
+  conteudo: {
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
