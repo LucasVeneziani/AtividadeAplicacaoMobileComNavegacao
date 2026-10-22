@@ -48,6 +48,7 @@ botao de sair que volta para o login
 
 Capturas de Tela
 
+![Captura12](assets/CapturasTela/12.png)
 ![Captura1](assets/CapturasTela/1.png)
 ![Captura2](assets/CapturasTela/2.png)
 ![Captura3](assets/CapturasTela/3.png)
