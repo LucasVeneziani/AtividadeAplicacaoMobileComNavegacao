@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TextInput, Pressable, Image } from 'react-native';
 import { useState } from 'react';
 import styles from './style';
+import Animacao from './animacao';
 
 export default function Login({ navigation }) {
 
@@ -34,6 +35,8 @@ export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
 
+      <Animacao/>
+
       <View style={styles.caixa}>
         <View style={styles.circuloLogo}>
           <Image source={require('../../../assets/Tijolo.png')} style={styles.logo} />
@@ -41,12 +44,21 @@ export default function Login({ navigation }) {
 
         <Text style={styles.text}>Login</Text>
 
-        <TextInput placeholder="Digite o Usuario" value={user} onChangeText={setUser} style={styles.inputContainerTexto}></TextInput>
-        <TextInput placeholder="Digite a Senha" value={pass} onChangeText={setPass} secureTextEntry={true} style={styles.inputContainerTexto}></TextInput>
+        <TextInput placeholder="Digite o Usuario" 
+        value={user} 
+        onChangeText={setUser} 
+        style={styles.inputContainerTexto}
+        ></TextInput> 
+        <TextInput placeholder="Digite a Senha" 
+        value={pass} 
+        onChangeText={setPass} 
+        secureTextEntry={true}
+         style={styles.inputContainerTexto}
+         ></TextInput> 
 
         <View style={styles.botoes}>
           <Pressable onPress={validar} style={styles.botao}>
-            <Text style={styles.textoBotao}>Entrar</Text>
+            <Text style={styles.textoBotao}>Entrar</Text >
           </Pressable>
           <Pressable onPress={limpar} style={styles.botao}>
             <Text style={styles.textoBotao}>Limpar</Text>
