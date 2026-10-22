@@ -12,7 +12,7 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator initialRouteName="Login">
         <Tab.Screen name="Home" component={Home}
           options={{ title: 'Alvenaria PlankMassa>Home',
             headerShown: false,
